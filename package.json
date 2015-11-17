@@ -42,5 +42,8 @@
     "mocha": "*",
     "npm-run-all": "*",
     "rimraf": "*"
+  },
+  "dependencies": {
+    "ramda": "^0.18.0"
   }
 }
