@@ -1,8 +1,24 @@
-import { equal } from 'assert';
+import { deepEqual } from 'assert';
 import domainLinks from './index';
 
 it('should domainLinks', () =>
-  equal(domainLinks('unicorns'), 'unicorns'));
+  deepEqual(domainLinks([
+    'http://what.ever/a/',
+    'http://what.ever/b/',
+    'http://foo.bar/1/',
+    'http://foo.bar/2/',
+    'http://foo.bar/3/',
+  ]), [
+    { domain: 'what.ever',
+      links: [
+        'http://what.ever/a/',
+        'http://what.ever/b/' ]},
+    { domain: 'foo.bar',
+      links: [
+        'http://foo.bar/1/',
+        'http://foo.bar/2/',
+        'http://foo.bar/3/' ]}
+  ]));
 
 it('should domainLinks invalid input', () =>
-  equal(domainLinks(), undefined));
+  deepEqual(domainLinks(), undefined));
