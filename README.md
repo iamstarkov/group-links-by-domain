@@ -16,28 +16,37 @@
 ```js
 import domainLinks from 'domain-links';
 
-domainLinks('unicorns'); // unicorns
+const links = [
+  'http://what.ever/a/',
+  'http://what.ever/b/',
+  'http://foo.bar/1/',
+  'http://foo.bar/2/',
+  'http://foo.bar/3/'
+];
+
+domainLinks(links); /* [
+  { domain: 'what.ever',
+    links: [
+      'http://what.ever/a/',
+      'http://what.ever/b/' ]},
+  { domain: 'foo.bar',
+    links: [
+      'http://foo.bar/1/',
+      'http://foo.bar/2/',
+      'http://foo.bar/3/' ]}
+]; */
 ```
 
 ## API
 
-### domainLinks(input, [options])
+### domainLinks(links)
 
-#### input
+#### links
 
 *Required*  
-Type: `String`
+Type: `Array` of `String`
 
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `Boolean`  
-Default: `false`
-
-Lorem ipsum.
+Links
 
 ## License
 
