@@ -1,5 +1,5 @@
 {
-  "name": "domain-links",
+  "name": "group-links-by-domain",
   "version": "0.0.0",
   "description": "group links by domain",
   "main": "index.es5.js",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iamstarkov/domain-links.git"
+    "url": "git+https://github.com/iamstarkov/group-links-by-domain.git"
   },
   "keywords": [
     "link",
@@ -29,9 +29,9 @@
   "author": "Vladimir Starkov <iamstarkov@gmail.com> (https://iamstarkov.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iamstarkov/domain-links/issues"
+    "url": "https://github.com/iamstarkov/group-links-by-domain/issues"
   },
-  "homepage": "https://github.com/iamstarkov/domain-links#readme",
+  "homepage": "https://github.com/iamstarkov/group-links-by-domain#readme",
   "devDependencies": {
     "assert": "*",
     "babel-cli": "^6.1.18",

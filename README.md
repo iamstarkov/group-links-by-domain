@@ -1,4 +1,4 @@
-# domain-links
+# group-links-by-domain
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -9,12 +9,12 @@
 
 ## Install
 
-    npm install --save domain-links
+    npm install --save group-links-by-domain
 
 ## Usage
 
 ```js
-import domainLinks from 'domain-links';
+import domainLinks from 'group-links-by-domain';
 
 const links = [
   'http://what.ever/a/',
@@ -52,14 +52,14 @@ Links
 
 MIT © [Vladimir Starkov](https://iamstarkov.com)
 
-[npm-url]: https://npmjs.org/package/domain-links
-[npm-image]: https://img.shields.io/npm/v/domain-links.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/group-links-by-domain
+[npm-image]: https://img.shields.io/npm/v/group-links-by-domain.svg?style=flat-square
 
-[travis-url]: https://travis-ci.org/iamstarkov/domain-links
-[travis-image]: https://img.shields.io/travis/iamstarkov/domain-links.svg?style=flat-square
+[travis-url]: https://travis-ci.org/iamstarkov/group-links-by-domain
+[travis-image]: https://img.shields.io/travis/iamstarkov/group-links-by-domain.svg?style=flat-square
 
-[coveralls-url]: https://coveralls.io/r/iamstarkov/domain-links
-[coveralls-image]: https://img.shields.io/coveralls/iamstarkov/domain-links.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/iamstarkov/group-links-by-domain
+[coveralls-image]: https://img.shields.io/coveralls/iamstarkov/group-links-by-domain.svg?style=flat-square
 
-[depstat-url]: https://david-dm.org/iamstarkov/domain-links
-[depstat-image]: https://david-dm.org/iamstarkov/domain-links.svg?style=flat-square
+[depstat-url]: https://david-dm.org/iamstarkov/group-links-by-domain
+[depstat-image]: https://david-dm.org/iamstarkov/group-links-by-domain.svg?style=flat-square
