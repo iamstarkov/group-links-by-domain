@@ -1,6 +1,6 @@
 {
   "name": "group-links-by-domain",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "group links by domain",
   "main": "index.es5.js",
   "scripts": {
