@@ -37,17 +37,6 @@ domainLinks(links); /* [
 ]; */
 ```
 
-## API
-
-### domainLinks(links)
-
-#### links
-
-*Required*  
-Type: `Array` of `String`
-
-Links
-
 ## License
 
 MIT © [Vladimir Starkov](https://iamstarkov.com)
