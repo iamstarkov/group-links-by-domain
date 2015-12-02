@@ -15,8 +15,8 @@ import {
 } from 'ramda';
 import { parse } from 'url';
 
-// getHost :: String -> String
-const getHost = pipe(parse, prop('host'));
+// host :: String -> String
+const host = pipe(parse, prop('host'));
 
 // removeWww :: String -> String
 const removeWww = replace('www.', '');
@@ -26,7 +26,7 @@ const startsWith = str => pipe(invoker(1, 'indexOf')(str), equals(0));
 
 // hasPrefixlessIn :: [String] -> String -> Boolean
 const hasPrefixlessIn = list =>
-  pipe(getHost, removeWww, startsWith, any(__, map(getHost, list)));
+  pipe(host, removeWww, startsWith, any(__, map(host, list)));
 
 // removeRedundantWww :: [String] -> [String]
 const removeRedundantWww = list =>
@@ -36,7 +36,7 @@ const removeRedundantWww = list =>
 const group = pipe(
   removeRedundantWww,
   uniq,
-  groupBy(pipe(parse, prop('host'))),
+  groupBy(host),
   toPairs,
   map(zipObj(['domain', 'links']))
 );
