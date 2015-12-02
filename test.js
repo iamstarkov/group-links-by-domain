@@ -10,6 +10,7 @@ it('should domainLinks', () =>
     'http://www.foo.bar/1/',
     'http://foo.bar/2/',
     'http://foo.bar/3/',
+    'http://www.baz.com/boo/'
   ]), [
     { domain: 'what.ever',
       links: [
@@ -20,7 +21,10 @@ it('should domainLinks', () =>
       links: [
         'http://foo.bar/1/',
         'http://foo.bar/2/',
-        'http://foo.bar/3/' ]}
+        'http://foo.bar/3/' ]},
+    { domain: 'www.baz.com',
+      links: [
+        'http://www.baz.com/boo/' ]}
   ]));
 
 it('should domainLinks invalid input', () =>
