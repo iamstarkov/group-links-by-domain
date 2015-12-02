@@ -28,7 +28,4 @@ const group = pipe(
   map(zipObj(['domain', 'links']))
 );
 
-export default function groupLinksByDomain(input) {
-  if (!input) return;
-  return group(input);
-};
+export default unary(unless(isNil, group));
