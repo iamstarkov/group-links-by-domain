@@ -1,18 +1,5 @@
-import {
-  __,
-  any,
-  equals,
-  groupBy,
-  invoker,
-  map,
-  pipe,
-  prop,
-  replace,
-  toPairs,
-  uniq,
-  when,
-  zipObj,
-} from 'ramda';
+import { isNil, unless, unary, __, any, equals, groupBy, invoker, map, pipe,
+        prop, replace, toPairs, uniq, when, zipObj } from 'ramda';
 import { parse } from 'url';
 
 // host :: String -> String
