@@ -9,7 +9,7 @@ const links = [
   'http://www.foo.bar/1/',
   'http://foo.bar/2/',
   'http://foo.bar/3/',
-  'http://www.baz.com/boo/',
+  'http://www.baz.com/boo/'
 ];
 
 it('should domainLinks', () =>
@@ -27,6 +27,17 @@ it('should domainLinks', () =>
     { domain: 'www.baz.com',
       links: [
         'http://www.baz.com/boo/' ]}
+  ]));
+
+it('should handle nested domains links', () =>
+  deepEqual(domainLinks([
+    'http://carsales.com.au/',
+    'http://seek.com.au/'
+  ]), [
+    { domain: 'carsales.com.au',
+      links: [ 'http://carsales.com.au/' ]},
+    { domain: 'seek.com.au',
+      links: [ 'http://seek.com.au/' ]}
   ]));
 
 it('should domainLinks invalid input', () =>
