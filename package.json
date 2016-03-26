@@ -44,6 +44,6 @@
     "rimraf": "*"
   },
   "dependencies": {
-    "ramda": "^0.19.1"
+    "ramda": "^0.20.0"
   }
 }
