@@ -39,7 +39,7 @@
     "babel-preset-es2015": "^6.1.18",
     "coveralls": "*",
     "isparta": "*",
-    "mocha": "*",
+    "mocha": "2.5.0",
     "npm-run-all": "*",
     "rimraf": "*"
   },
