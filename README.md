@@ -1,5 +1,7 @@
 # group-links-by-domain
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/iamstarkov/group-links-by-domain.svg)](https://greenkeeper.io/)
+
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Coveralls Status][coveralls-image]][coveralls-url]
